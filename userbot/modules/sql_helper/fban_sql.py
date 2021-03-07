@@ -37,8 +37,3 @@ def del_flist(chat_id):
     if rem:
         SESSION.delete(rem)
         SESSION.commit()
-
-
-def del_flist_all():
-    SESSION.execute("""TRUNCATE TABLE fban""")
-    SESSION.commit()
